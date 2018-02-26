@@ -1,0 +1,35 @@
+nav {
+  background-color: #252525;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-image: url("../images/banner.jpg");
+  color: #dbcece;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 50vw;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 90%;
+}
+
+h2 {
+  font-size: 90%;
+}
+/*# sourceMappingURL=template.css.map */
