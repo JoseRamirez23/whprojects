@@ -1,0 +1,130 @@
+$key:hsl(181, 100%, 41%);
+$white: hsl(0, 0%, 96%);
+$black:hsl(0,0%,8%);
+
+body{
+
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+header{
+
+
+    padding:10vw 2vw;
+    background-color:$key;
+    text-align: center;
+    color:$white;
+}
+//pseudo class link
+a:link{
+
+
+    color:inherit;
+
+}
+a:active{
+
+    color:purple;
+}
+//pseudo class visited
+a:visited{
+
+    color:lime;
+}
+//pseudo class hover
+
+a{
+
+    color: inherit;
+}
+ul{
+
+    padding:0;
+    margin:0;
+    list-style:0;
+}
+
+h1{
+
+
+    font-size:40px;
+    font-weight: 100;
+}
+ h2{
+
+    font-weight: 100;
+    margin:45px;
+   // font-size:1.75vw;
+ }
+
+
+ 
+ header div{
+    width:34%;
+    padding:5vw;
+    //border:1px solid $white;
+
+    border-width: 4px 1px;
+    border-style: double solid;
+    border-color:white;
+    margin:0 auto;
+
+
+
+ }
+
+.btn{
+
+    background-color:transparentize($black, .75);
+    color:white;
+    padding:14px 20px;
+    //opacity: .25;
+    text-decoration: none;
+    transition: background-color 200ms ;
+    
+    
+
+}
+a.btn:hover{
+
+    background-color:transparentize($black, .90);
+   
+    
+
+}
+#features{
+
+
+    text-align: center;
+}
+#features h2{
+    border-bottom: 3px double $black;
+    display:inline-block;
+    
+    }
+
+#features ul{
+
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+    li{
+
+        width:25%;
+        padding:40px;
+        border: 1px solid $black;
+        margin-left:-1px;
+        margin-top: -1px;
+        text-align: center;
+    }
+    i{
+
+        font-size: 300%;
+        color:$key;
+    }
+
+}
