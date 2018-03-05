@@ -1,0 +1,127 @@
+$ignite: hsl(191, 58%, 42%);
+$classic: hsl(11, 58%, 51%);
+$black:hsl(204, 6%, 17%);
+$white:hsl(0,0%,96%);
+body{
+
+
+    margin:0;
+    font-family: 'Prompt', sans-serif;
+    color:$white;
+}
+h1{
+
+    margin:0;
+}
+header{
+
+    display:flex;
+    overflow:hidden;
+    background-color:$black;
+    position: relative;
+    height:200px;
+
+}
+.skew{
+
+    width:50vw;
+    
+    transform:skew(-45deg);
+transform-origin: left bottom;
+}
+.ignite{
+//width:200px;
+background-color:$ignite;
+
+
+}
+.classic{
+
+//width:200px;
+background-color:$classic;
+background-image:url('../images/colors.svg');
+background-size:100px;
+background-repeat: repeat-y; 
+}
+.text{
+
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    display:flex;
+}
+.logo{
+
+    flex:none;
+    //background-color:rgba(25, 211, 202, 0.5);
+    width:200px;
+    height:100%;
+    img{
+
+
+        width:50%;
+       // height:50%;
+        //background-color:hsla(65,50%, 50%, .5);
+    }
+}
+.marquee{
+
+margin-left:-75px;
+display:flex;
+align-items: center;
+h1{
+text-shadow:0 4px transparentize($color: black, $amount: .5) ; 
+}
+
+}
+
+
+@media print {
+    header{
+
+
+        height:1px;
+        font-size:1%;
+    }
+
+    .skew{
+
+
+        display:none;
+        
+    }
+}
+
+@media screen and (orientation: portrait){
+.ignite{
+
+
+    background-color:red;
+}
+
+.classic{
+
+    background-color:blue;
+}
+
+
+}
+
+
+
+@media screen and (max-width: 670px){
+
+
+    font-size:150%;
+    color:$black;
+}
+@media screen and (max-width: 472px){
+    h1{
+
+        font-size:75%;
+        color:$white;
+    }
+
+}

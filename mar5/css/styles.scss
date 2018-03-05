@@ -1,0 +1,75 @@
+html{
+color:gray;
+    
+}
+
+main{
+
+
+
+    background-color: aquamarine;
+    height: 50vh; //vh or vw is base one the window size
+    position: relative;
+}
+.img1{
+
+
+    position: absolute;
+    right:0;
+    bottom:0;
+   // left:;
+   // top:;
+}
+
+.img2{
+
+
+    position: absolute;
+    //right:0;
+    bottom:0;
+    left:0%;
+   // top:;
+   z-index: 5;
+}
+
+.img3{
+
+
+    position: absolute;
+    //right:0;
+    //bottom:0;
+    left:0%;
+    top:0;
+}
+
+.img4{
+
+
+    position: absolute;
+    right:0;
+    //bottom:0;
+    //left:0%;
+    top:0;
+}
+
+div{
+
+
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    right:0;
+    background-color:transparentize(green, 0.5);
+    
+    //background-color:transparentize($color: #000000, $amount: 50%);
+    //right:50%;
+    //bottom:50%;
+    //left:0%;
+    //top:0;
+   // transform:translate3d(x,y,z);
+   //transform:translate3d(-50%,-50%,0) ;
+   //transform: translateX(-50%) translateY(50%) skewX(45deg);
+
+    
+}
