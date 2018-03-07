@@ -1,0 +1,105 @@
+html {
+  background-color: white;
+  font-family: sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav#horizontal {
+  background-color: #212121;
+  padding: 10px;
+  color: white;
+}
+
+nav#horizontal ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav#horizontal ul a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 100;
+  padding: 5px;
+}
+
+nav#horizontal ul a:hover, nav#horizontal ul a.active {
+  color: #32e9c1;
+  background-color: #2a0f57;
+}
+
+nav#dropdown {
+  background-color: #27db54;
+  padding: 10px;
+  color: black;
+}
+
+nav#dropdown ul li {
+  position: relative;
+  display: inline-block;
+}
+
+nav#dropdown ul li:nth-child(1):hover ul {
+  display: block;
+  position: absolute;
+  background-color: #8c8c8c;
+  padding: 5px;
+  width: 200px;
+}
+
+nav#dropdown ul li:nth-child(1):hover li {
+  white-space: nowrap;
+  display: block;
+}
+
+nav#dropdown ul li:nth-child(1):hover li:not(:last-child) {
+  white-space: nowrap;
+  display: block;
+  border-bottom: 1px solid #737373;
+}
+
+nav#dropdown ul li:nth-child(1):hover a {
+  display: block;
+  padding-right: 20px;
+  transition: all 250ms;
+}
+
+nav#dropdown ul li:nth-child(1):hover a:hover {
+  color: white;
+  border-left: 3px solid gold;
+  text-indent: 10px;
+}
+
+nav#dropdown ul ul {
+  display: none;
+}
+
+nav#dropdown ul a {
+  color: inherit;
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+}
+
+nav#dropdown ul a:hover {
+  background-color: #bfbfbf;
+}
+
+#stuff {
+  width: calc(100% -40px);
+  background-color: black;
+  padding: 40px;
+  border: 10px dashed aqua;
+  margin: 20px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+/*# sourceMappingURL=styles.css.map */
