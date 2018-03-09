@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
+@import url("https://use.fontawesome.com/releases/v5.0.8/css/all.css");
+body {
+  margin: 0;
+  background-color: #e6e6e6;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300px;
+  color: #4d4d4d;
+  line-height: 1.35;
+}
+
+h2 {
+  font-weight: 400px;
+  color: #1a1a1a;
+  margin-top: 0;
+  border-top: 1px #cccccc;
+  padding: 2vw;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+P {
+  margin-top: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  text-transform: uppercase;
+  font-size: 60%;
+  padding: 2vw 8vw;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.btn {
+  padding: 2vw 4vw;
+  text-transform: uppercase;
+  border: 1px solid #4e4e4e;
+  border-radius: 2px;
+  margin-top: 2vw;
+  font-size: 80%;
+  font-weight: 400;
+  border: 1px #d9d9d9;
+  color: #262626;
+}
+
+.btn:hover {
+  background-color: #f2f2f2;
+}
+
+#skillsets {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#skillsets figcaption {
+  text-align: center;
+}
+
+#skillsets li {
+  width: 47%;
+  background-color: #fafafa;
+  position: relative;
+  bottom: -50px;
+  animation-name: skills;
+  animation-duration: 1s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+#skillsets img {
+  width: 100%;
+}
+
+#skillsets div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 8vw 4vw;
+}
+
+#skillsets div * {
+  position: relative;
+  bottom: -50px;
+  opacity: 0;
+}
+
+#skillsets div h2 {
+  animation: skills 500ms forwards 6s;
+}
+
+#skillsets div p {
+  animation: skills 500ms forwards 6.25s;
+}
+
+#skillsets div a {
+  animation: skills 500ms forwards 6.5s;
+}
+
+#skillsets h2 {
+  text-align: center;
+}
+
+#skillsets p {
+  width: 100%;
+  text-align: left;
+}
+
+@keyframes skills {
+  from {
+    bottom: -50px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 100;
+  }
+}
+
+i {
+  font-size: 100px;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  animation: spinner 1s infinite linear;
+}
+
+@keyframes spinner {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+/*# sourceMappingURL=styles.css.map */
