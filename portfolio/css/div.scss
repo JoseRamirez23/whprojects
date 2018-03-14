@@ -100,106 +100,69 @@ nav{
     a:hover{
 
         color:rgb(29, 236, 209);
-        
+        font-size:50px;
         
     }
-    i{
-
-        position: relative;
-        animation: alternate;
-    }
-}
-#lefttop{
-
-    position: absolute;
-    left:3px;
-    top:3px;
-    background-image:linear-gradient(rgba(0, 255, 213, 0.1), rgba(0, 255, 42, 0.1)),url(../images/Fields.jpg) ;
-	
-	background-repeat:no-repeat;
-	background-position: center;
-
-    background-size: cover;
-}
-
-#righttop{
-
-    position: absolute;;
-    right:3px;
-    top:3px;
-}
-#leftbottom{
-
-    position:absolute;
-    left:3px;
-    bottom:3px;
-}
-#rightbottom{
-
-    position:absolute;
-    right:3px;
-    bottom:3px;
-}
-
-#center{
-    position:absolute;
-    width:100px;
-
-   
-    bottom:80px;
-    right:440px;
-    height:350px;
-   
-    background-image:linear-gradient(rgba(0, 255, 213, 0.3), rgba(0, 255, 42, 0.2)),url(../images/mi.jpg) ;
-	
-	background-repeat:no-repeat;
-	background-position: center;
-
-    background-size: cover;
-
-i{
-
-    position: relative;
-    animation: alternate;
-    font-size:30px;
+    
 }
 
 
-}
 main{
     position: relative;
 
     width:1000px;
-    height:500px;
+    height:800px;
     border: 5px solid white;
     margin:auto;
-    border-radius: 1px 1px 12px 12px;
+    border-radius: 1px 1px 1px 1px;
     text-align:center;
-    i{
-
-        position: relative;
-        animation: alternate;
-        font-size:30px;
-    }
-    
-}
-i{
-    position: absolute;
-    //animation-name: skills;
-    animation: spinner 5s 1 linear;
+    background-color:transparentize($color: #dfdfdf, $amount: .3);
     
 }
 
+// i{
+//     position: absolute;
+//     //animation-name: skills;
+//     //animation: spinner 5s 1 linear;
+    
+// }
 
 
 
-@keyframes spinner {
-    from {
-      transform: translateX(0%) rotate(0deg);
-    }
-    to {
-      transform: translateX(0%) rotate(360deg);
-    }
+
+// @keyframes spinner {
+//     from {
+//       transform: translateX(0%) rotate(0deg);
+//     }
+//     to {
+//       transform: translateX(0%) rotate(360deg);
+//     }
 
     
-  }
+//   }
+
+footer{
+
+    
+    border: 5px solid white;
+    border-radius: 1px 1px 12px 12px;
+    height:50px;
+    width:990px;
+    margin:auto;
+    background-color:transparentize($color: #dfdfdf, $amount: .3);
+    font-size:40px;
+    padding:5px;
+    text-align:center;
+
+    a{
+
+        color:rgb(29, 236, 209);
+    }
+    a:hover{
+
+        color:white;
+        font-size:55px;
+        
+    }
+
+}
