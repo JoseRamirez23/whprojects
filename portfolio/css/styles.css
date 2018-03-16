@@ -37,15 +37,16 @@ div a {
 }
 
 div h3 {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 div h3 a {
-  color: aqua;
+  color: white;
+  text-shadow: 1px 1px 18px 5px;
 }
 
 div h3 a:hover {
-  color: white;
+  color: #15e28d;
 }
 
 div h1 {
@@ -54,6 +55,7 @@ div h1 {
 
 div h1 a {
   color: whitesmoke;
+  text-shadow: 1px 1px 18px 5px;
 }
 
 div h1 a:hover {
@@ -111,6 +113,11 @@ nav i {
   position: absolute;
   right: 3px;
   bottom: 3px;
+  font-size: 20px;
+  background-image: linear-gradient(rgba(0, 255, 213, 0.1), rgba(0, 255, 42, 0.1)), url(../images/featured.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #center {
@@ -149,7 +156,7 @@ main i {
 
 i {
   position: absolute;
-  animation: spinner 5s 1 linear;
+  animation: spinner 3s 1 linear;
 }
 
 @keyframes spinner {

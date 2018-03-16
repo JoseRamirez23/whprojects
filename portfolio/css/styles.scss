@@ -48,15 +48,16 @@ div{
     }
     h3{
 
-        font-size: 15px;
+        font-size: 20px;
         a{
 
-            color:aqua;
+            color:white;
+            text-shadow:1px 1px 18px 5px;
             
         }
         a:hover{
 
-            color:white;
+            color:rgb(21, 226, 141);
             //background-color: transparentize($color: black, $amount: .6);
         }
     }
@@ -68,6 +69,7 @@ div{
 
             
             color:whitesmoke;
+            text-shadow:1px 1px 18px 5px;
             
         }
         a:hover{
@@ -115,7 +117,6 @@ nav{
     left:3px;
     top:3px;
     background-image:linear-gradient(rgba(0, 255, 213, 0.1), rgba(0, 255, 42, 0.1)),url(../images/Fields.jpg) ;
-	
 	background-repeat:no-repeat;
 	background-position: center;
 
@@ -139,6 +140,11 @@ nav{
     position:absolute;
     right:3px;
     bottom:3px;
+    font-size:20px;
+    background-image:linear-gradient(rgba(0, 255, 213, 0.1), rgba(0, 255, 42, 0.1)),url(../images/featured.png) ;
+	background-repeat:no-repeat;
+	background-position: center;
+    background-size: cover;
 }
 
 #center{
@@ -186,7 +192,7 @@ main{
 i{
     position: absolute;
     //animation-name: skills;
-    animation: spinner 5s 1 linear;
+    animation: spinner 3s 1 linear;
     
 }
 

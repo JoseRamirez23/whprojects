@@ -105,11 +105,11 @@ footer {
 }
 
 footer a {
-  color: #1decd1;
+  color: white;
 }
 
 footer a:hover {
-  color: white;
   font-size: 55px;
+  color: #1decd1;
 }
 /*# sourceMappingURL=div.css.map */
