@@ -30,16 +30,19 @@ body{
     width:100%;
     border-radius:0px;
     border:none;
+    position: relative;
     
 }
 
 div{
 
+
     border:5px inset rgba(0, 255, 213, 0.5);
     background-color: transparentize($color: #dfdfdf, $amount: .6);
-    width:200px;
-    height:200px;
-    border-radius: 15px;
+    width:35vw;
+    height:239px;
+    border-radius: 1px 1px 1px 1px;
+    //padding:1px;
     
 
     a{
@@ -89,7 +92,7 @@ nav{
     border: 5px solid white;
     border-radius: 12px 12px 1px 1px;
     height:50px;
-    width:990px;
+    width:80.9vw;
     margin:auto;
     background-color:transparentize($color: #dfdfdf, $amount: .3);
     font-size:40px;
@@ -113,48 +116,56 @@ nav{
 }
 #lefttop{
 
-    position: absolute;
-    left:3px;
-    top:3px;
+   // position: absolute;
+    //left:3px;
+    //top:3px;
     background-image:linear-gradient(rgba(0, 255, 213, 0.1), rgba(0, 255, 42, 0.1)),url(../images/Fields.jpg) ;
 	background-repeat:no-repeat;
 	background-position: center;
-
+    align-self:flex-start;
     background-size: cover;
 }
 
 #righttop{
 
-    position: absolute;;
-    right:3px;
-    top:3px;
+   // position: absolute;;
+   // right:3px;
+   // top:3px;
+   //flex-wrap: nowrap;
+   align-self:flex-start;
 }
 #leftbottom{
 
-    position:absolute;
-    left:3px;
-    bottom:3px;
+   // position:absolute;
+    //left:3px;
+   // bottom:3px;
+   //flex-wrap: nowrap;
+   align-self:flex-end;
 }
 #rightbottom{
-
-    position:absolute;
-    right:3px;
-    bottom:3px;
+    //flex-wrap: nowrap;
+   // position:absolute;
+    //right:3px;
+    //bottom:3px;
     font-size:20px;
     background-image:linear-gradient(rgba(0, 255, 213, 0.1), rgba(0, 255, 42, 0.1)),url(../images/featured.png) ;
 	background-repeat:no-repeat;
 	background-position: center;
     background-size: cover;
+    align-self:flex-end;
 }
 
 #center{
-    position:absolute;
-    width:100px;
+    //position:absolute;
+    align-self: center;
+    width:7vw;
+    
+
 
    
-    bottom:80px;
-    right:440px;
-    height:350px;
+    //bottom:80px;
+   // right:440px;
+    height:800px;
    
     background-image:linear-gradient(rgba(0, 255, 213, 0.3), rgba(0, 255, 42, 0.2)),url(../images/mi.jpg) ;
 	
@@ -173,14 +184,17 @@ i{
 
 }
 main{
-    position: relative;
-
-    width:1000px;
+    position: relative ;
+    flex-wrap:wrap;
+    width:81.7vw;
     height:500px;
     border: 5px solid white;
     margin:auto;
     border-radius: 1px 1px 12px 12px;
     text-align:center;
+    display:flex;
+    flex-direction: column;
+    
     i{
 
         position: relative;
