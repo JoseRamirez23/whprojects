@@ -1,0 +1,44 @@
+nav{
+
+    background-color:black;
+
+    ul{
+
+        padding:0;
+        margin:0;
+        list-style:none;
+        display:flex;
+        justify-content:center;
+
+    }
+
+    li{
+
+        margin:5px;
+    }
+
+}
+
+span.mega{
+
+
+    font-size:200%;
+    color:red;
+}
+
+nav.vertical{
+
+    position:fixed;
+    width:25%;
+    height:100vh;
+
+    ul{
+
+        flex-direction: column;
+    }
+
+}
+main.vertical{
+
+    margin-left:28%;
+}
