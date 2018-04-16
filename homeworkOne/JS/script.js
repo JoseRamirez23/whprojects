@@ -1,3 +1,5 @@
+
+
 //variable
 var randColor;
 
@@ -48,3 +50,57 @@ function getRightBtn(){
 alert('As soon as you touch this door knob a minotaur picks you up and breakes your neck.');
 
 }
+
+
+
+
+
+
+var myTimer = setInterval(updateTimer,1000);
+
+function updateTimer(){
+
+var theTime = new Date();
+
+//HH:MM:SS
+
+var timeStr =`
+   
+
+  ${theTime.toLocaleString('en-us',{hour: 'numeric',hour12:false, minute:'2-digit',second:'2-digit'})}
+    
+`;
+
+document.querySelector('h4').textContent = timeStr;
+
+}
+
+
+var myDelay = setTimeout(hiliteBg,5000);
+
+function hiliteBg(){
+
+    document.body.classList.add('hitlite');
+}
+
+
+function runTimer(){
+
+    var theTime = new Date();
+    
+    //HH:MM:SS
+    
+    var timeStr =`
+       
+    
+      ${theTime.toLocaleString('en-us',{hour: 'numeric', hour12:false, minute:'2-digit',second:'2-digit'})}
+        
+    `;
+    
+    document.querySelector('h3').textContent = timeStr;
+    
+    }
+
+    // document.getElementById("left").style.backgroundColor = "black";
+    // document.getElementById("right").style.backgroundColor = "black";
+    // document.getElementById("center").style.backgroundColor = "black";
