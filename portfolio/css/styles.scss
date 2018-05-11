@@ -2,7 +2,7 @@
 html{
 
     background-color:rgb(116, 104, 104);
-    background-image:linear-gradient(rgba(0, 255, 213, 0.1), rgba(0, 255, 42, 0.4)),url(../images/ocean.jpg);
+    background-image:linear-gradient(rgba(255, 0, 0, 0.349), rgba(0, 255, 200, 0.4)),url(../images/ocean.jpg);
 	height:100%;
 	background-repeat:no-repeat;
 	background-position:center center;
@@ -26,21 +26,13 @@ body{
 
 
 
-#container{
-    width:100%;
-    border-radius:0px;
-    border:none;
-    position: relative;
-    
-}
-
 div{
 
 
     border:5px inset rgba(0, 255, 213, 0.5);
     background-color: transparentize($color: #dfdfdf, $amount: .6);
-    width:35vw;
-    height:239px;
+    width:30vw;
+    height:30vh;
     border-radius: 1px 1px 1px 1px;
     //padding:1px;
     
@@ -89,30 +81,20 @@ div{
 
 nav{
 
-    border: 5px solid white;
-    border-radius: 12px 12px 1px 1px;
+    border-bottom: 5px solid white;
+    border-radius: 0 0px 10px 10px;
     height:50px;
-    width:80.9vw;
-    margin:auto;
+    width: 99.5%;
     background-color:transparentize($color: #dfdfdf, $amount: .3);
     font-size:40px;
     padding:5px;
     text-align:left;
-    a{
-
-        color:whitesmoke;
-    }
-    a:hover{
-
-        color:rgb(29, 236, 209);
-        
-        
-    }
-    i{
-
-        position: relative;
-        animation: alternate;
-    }
+    margin:0px;
+    position:fixed;
+    top:0px;
+    left:0px;
+    
+    
 }
 #lefttop{
 
@@ -133,6 +115,7 @@ nav{
    // top:3px;
    //flex-wrap: nowrap;
    align-self:flex-start;
+   margin-top:15px;
 }
 #leftbottom{
 
@@ -141,6 +124,7 @@ nav{
    // bottom:3px;
    //flex-wrap: nowrap;
    align-self:flex-end;
+   
 }
 #rightbottom{
     //flex-wrap: nowrap;
@@ -148,27 +132,23 @@ nav{
     //right:3px;
     //bottom:3px;
     font-size:20px;
-    background-image:linear-gradient(rgba(0, 255, 213, 0.1), rgba(0, 255, 42, 0.1)),url(../images/featured.png) ;
+    //background-image:linear-gradient(rgba(0, 255, 213, 0.1), rgba(0, 255, 42, 0.1)),url(../images/featured.png) ;
 	background-repeat:no-repeat;
 	background-position: center;
     background-size: cover;
     align-self:flex-end;
+    margin-top:15px;
 }
 
 #center{
     //position:absolute;
     align-self: center;
-    width:7vw;
-    
-
-
-   
+    width:10vw;
     //bottom:80px;
    // right:440px;
-    height:800px;
-   
+    height:405px;
+   margin-bottom:15px;
     background-image:linear-gradient(rgba(0, 255, 213, 0.3), rgba(0, 255, 42, 0.2)),url(../images/mi.jpg) ;
-	
 	background-repeat:no-repeat;
 	background-position: center;
 
@@ -178,7 +158,7 @@ i{
 
     position: relative;
     animation: alternate;
-    font-size:30px;
+    font-size:25px;
 }
 
 
@@ -186,40 +166,45 @@ i{
 main{
     position: relative ;
     flex-wrap:wrap;
-    width:81.7vw;
-    height:500px;
-    border: 5px solid white;
+    width:90vw;
+    height:90vh;
     margin:auto;
-    border-radius: 1px 1px 12px 12px;
     text-align:center;
     display:flex;
     flex-direction: column;
+    padding:5px;
+    margin-top:100px;
     
     i{
 
         position: relative;
         animation: alternate;
         font-size:30px;
+        
     }
     
 }
-i{
-    position: absolute;
-    //animation-name: skills;
-    animation: spinner 3s 1 linear;
+
+
+
+
+// i{
+//     position: absolute;
+//     //animation-name: skills;
+//     animation: spinner 3s 1 linear;
     
-}
+// }
 
 
 
 
-@keyframes spinner {
-    from {
-      transform: translateX(0%) rotate(0deg);
-    }
-    to {
-      transform: translateX(0%) rotate(360deg);
-    }
+// @keyframes spinner {
+//     from {
+//       transform: translateX(0%) rotate(0deg);
+//     }
+//     to {
+//       transform: translateX(0%) rotate(360deg);
+//     }
 
     
-  }
+//   }

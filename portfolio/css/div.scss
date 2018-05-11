@@ -84,25 +84,19 @@ div{
 
 nav{
 
-    border: 5px solid white;
-    border-radius: 12px 12px 1px 1px;
+    border-bottom: 5px solid white;
+    border-radius: 0 0px 10px 10px;
     height:50px;
-    width:990px;
-    margin:auto;
+    width: 100%;
     background-color:transparentize($color: #dfdfdf, $amount: .3);
     font-size:40px;
     padding:5px;
     text-align:left;
-    a{
-
-        color:whitesmoke;
-    }
-    a:hover{
-
-        color:rgb(29, 236, 209);
-        font-size:50px;
-        
-    }
+    margin:0px;
+    position:fixed;
+    top:0px;
+    left:0px;
+    
     
 }
 
