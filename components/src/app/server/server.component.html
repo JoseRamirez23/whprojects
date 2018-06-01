@@ -1,3 +1,5 @@
 
+<!-- this is to change the color, you have to bind with [] so you can target the property -->
+<p [ngStyle]="{backgroundColor:getBackgroundColor()}" [ngClass]="{'standard':true, 'online':(serverStatus ==='Online')}">
+    {{'Server'}} with ID {{serverId}} is {{ getServerStatus() }}</p>
 
-<p>{{'Server'}} with ID {{serverId}} id {{serverStatus}}</p>
