@@ -11,8 +11,13 @@
 //     sessionStorage.setItem('vehicle', 'jeep');
 // }
 
+//a var to target input
 var saveBtn = document.querySelector('input[type="submit"]');
+
+//this is telling it if it not null then take the following action
 if(localStorage.getItem("details") !== null){
+
+    //this event listener is telling it once click to go to the function get UserInfo
     saveBtn.removeEventListener('click', getUserInfo);
     saveBtn.addEventListener('click', checkPassword);
 }else{
@@ -54,10 +59,11 @@ function checkPassword(evt){
     var userName = document.querySelector('input[type="text"]').value;
     var userPass = MD5(document.querySelector('input[type="password"]').value);
     var userInfo = JSON.parse(localStorage.getItem("details"));
+    
     if(userName === userInfo.user && userPass === userInfo.pass){
         alert('Welcome home!');
         document.body.classList.add(userInfo.theme);
     }else{
-        alert('Please enter proper credentials');
+        alert('Try again, you did it wrong!');
     }
 }

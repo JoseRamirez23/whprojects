@@ -70,7 +70,7 @@ export class AppComponent implements OnInit{
     let pl= new Point(3,4);
     let p2 = new Point(5,6);
 
-    let p3 = 'p1' +'p2';
+    let p3 = pl.add(p2);
 
     const p3D1 = new Point3D(4, 7, 88);
     const p3D2 = new Point3D(8, 3, 34);

@@ -1,0 +1,23 @@
+html {
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  height: 50px;
+  width: 50px;
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  border-radius: 100px;
+}
+
+main {
+  border: 5px solid red;
+  border-radius: 100px;
+}
+
+button {
+  margin: auto;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,10 @@
 body.dark {
-  background-color: gray;
+  background-color: black;
+  color: white;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #cabcbc;
 }
 /*# sourceMappingURL=styles.css.map */
