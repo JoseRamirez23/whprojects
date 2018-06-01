@@ -1,1 +1,28 @@
+<button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add server</button>
+<label>Server Name</label>
+
+<!-- this is event binding -->
+<!--$event will get what's in input, or what ever you put in the ()-->
+<!-- <input type="text" class="form-control" (input)="onUpdateServerName($event)"> -->
+
+<!-- two way binding -->
+<!-- you are binding an event [()] -->
+<input type="text" class="form-control" [(ngModel)]="serverName">
+
+<p>{{ serverCreationStatus }}</p>
+
+
+<p>{{serverName}}</p>
+
 <app-server></app-server>
+<app-server></app-server>
+
+<!--this is will display new, this is string interpolation -->
+<p> string interpolation: {{allowNewServer}}</p>
+
+<!--put [] in the spell binding, you also need double " '' "-->
+<p [innerText] ="'property binding'"></p>
+
+
+<p [innerText] ="allowNewServer"></p>
+
